@@ -1,0 +1,137 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {},
+  "extends": [
+    "plugin:react/recommended",
+    "standard",
+    "plugin:react-hooks/recommended",
+    "plugin:import/typescript",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "import"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    },
+    "react": {
+      "version": "16.14.0"
+    }
+  },
+  "rules": {
+    "no-undef": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-use-before-define": "off",
+    "camelcase": "off",
+    "comma-dangle": "off",
+    "func-call-spacing": "off",
+    "import/no-absolute-path": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ]
+      }
+    ],
+    "import/un-resolved": "off",
+    "indent": "off",
+    "multiline-ternary": "off",
+    "no-console": "off",
+    "no-unused-expressions": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-useless-constructor": "off",
+    "no-useless-escape": "off",
+    "prefer-regex-literals": "off",
+    "react/no-unknown-property": "error",
+    "react/prop-types": "off",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "space-before-function-paren": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "app/(ui)/**/*.{ts,tsx}",
+        "components/{base,card,chart,course-progress,course,grade,note,progressbar,tab,table}/**/*.{ts,tsx}",
+        "constants/**/*.{ts,tsx}",
+        "context/**/*.{ts,tsx}",
+        "types/**/*.{ts,tsx}"
+      ],
+      "rules": {
+        "semi": "off",
+        "quotes": "off",
+        "jsx-quotes": "off",
+        "no-multiple-empty-lines": "off",
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "object-curly-spacing": "off",
+        "padded-blocks": "off",
+        "no-multi-spaces": "off",
+        "space-in-parens": "off",
+        "array-bracket-spacing": "off",
+        "comma-spacing": "off",
+        "key-spacing": "off",
+        "keyword-spacing": "off",
+        "space-before-blocks": "off",
+        "space-infix-ops": "off",
+        "spaced-comment": "off",
+        "no-mixed-operators": "off",
+        "no-tabs": "off",
+        "brace-style": "off",
+        "quote-props": "off",
+        "no-extra-semi": "off",
+        "operator-linebreak": "off",
+        "curly": "off",
+        "lines-between-class-members": "off",
+        "object-property-newline": "off",
+        "no-new": "off",
+        "no-void": "off",
+        "eqeqeq": "off",
+        "import/order": "off",
+        "react/no-unescaped-entities": "off",
+        "no-useless-return": "off",
+        "dot-notation": "off",
+        "no-extra-parens": "off",
+        "yoda": "off",
+        "no-lone-blocks": "off",
+        "no-multi-str": "off",
+        "no-template-curly-in-string": "off",
+        "no-unneeded-ternary": "off",
+        "prefer-const": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "react/self-closing-comp": "warn"
+      }
+    }
+  ]
+}
